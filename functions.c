@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_char - print character
+ * print_char - print character according to params
  * @types: arguments
  * @buffer: buffer array
  * @flags: active flags
  * @width: width
- * @precision: precision specification
- * @size: size specification
+ * @precision: precision specification according to params
+ * @size: size spec
  * Return: number of chars
  */
 int print_char(va_list types, char buffer[], int flags,
@@ -73,14 +73,14 @@ int print_string(va_list types, char buffer[], int flags,
 	return (write(1, s, l));
 }
 /**
- * print_percent - prints a percent
- * @types: arguments
+ * print_percent - prints a percenage of number
+ * @types: argument specs
  * @buffer: buffer array
  * @flags: active flags
  * @width: width
- * @precision: precision specification
- * @size: size specification
- * Return: number of chars
+ * @precision: precision spec
+ * @size: size spec
+ * Return: number of characters
  */
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -95,14 +95,14 @@ int print_percent(va_list types, char buffer[],
 }
 
 /**
- * print_int - prints an integer
+ * print_int - prints an integer according to params
  * @types: arguments
  * @buffer: buffer array
  * @flags: active flags
  * @width: width
- * @precision: precision specification
- * @size: size specification
- * Return: number of chars
+ * @precision: precision specs
+ * @size: size specs
+ * Return: number of characters
  */
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -143,10 +143,11 @@ int print_int(va_list types, char buffer[],
  * @buffer: buffer array
  * @flags: active flags
  * @width: width
- * @precision: precision specification
- * @size: size specification
- * Return: number of chars
+ * @precision: precision specs
+ * @size: size spec
+ * Return: number of characters
  */
+
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -181,4 +182,3 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
-
