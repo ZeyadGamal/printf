@@ -3,15 +3,16 @@
 #include <math.h>
 
 /**
- * print_unsigned - Prints an unsignd number
+ * print_unsigned - Prints an unsignd number integer
  * @types: arguments
  * @buffer: Buffer
  * @flags: active flags
  * @width: get width
- * @precision: Precis speci
- * @size: Size specifica
+ * @precision: Precis specs
+ * @size: Size spec
  * Return: Number of chars printed
  */
+
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -37,15 +38,16 @@ int print_unsigned(va_list types, char buffer[],
 }
 
 /*
- * print_octal - Prints an octl number
- * @types: arguments
+ * print_octal - Prints an octal number integer
+ * @types: arguments as always
  * @buffer: Buffer
  * @flags: active flags
  * @width: get width
- * @precision: Precisi specification
- * @size: Size specification
+ * @precision: Precisi spec
+ * @size: Size spec
  * Return: Number of chars
  */
+
 int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -83,8 +85,8 @@ int print_octal(va_list types, char buffer[],
  * @buffer: Buffer
  * @flags: active flag
  * @width: get width
- * @precision: Precision specification
- * @size: Size specification
+ * @precision: Precision specs
+ * @size: Size spec
  * Return: Number of chars printed.
  */
 int print_hexadecimal(va_list types, char buffer[],
@@ -100,8 +102,8 @@ int print_hexadecimal(va_list types, char buffer[],
  * @buffer: Buffer
  * @flags: active flags
  * @width: get width
- * @precision: Precision specification
- * @size: Size specification
+ * @precision: Precision specs
+ * @size: Size spec
  * Return: Number of chars printed.
  */
 int print_hexa_upper(va_list types, char buffer[],
@@ -119,10 +121,12 @@ int print_hexa_upper(va_list types, char buffer[],
  * @flags: active flags
  * @flag_ch: active flags
  * @width: get width
- * @precision: Precision specification
+ * @precision: Precison specs
  * @size: Size specification
  * Return: Number of chars printed.
  */
+
+
 int print_hexa(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
 {
