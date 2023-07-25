@@ -92,7 +92,7 @@ int print_non_printable(va_list types, char buffer[],
 /**
  * print_reverse - Prints reverse string.
  * @types: arguments
- * @buffer: Buffer 
+ * @buffer: Buffer
  * @flags:  active flags
  * @width: get width
  * @precision: Precision specification
